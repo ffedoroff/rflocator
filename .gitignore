@@ -1,0 +1,12 @@
+.idea/
+.venv/
+__pycache__/
+*.pyo
+*.pyc
+node_modules/
+my-app/
+backend/static/
+backend/rfsite/settings_production_flag.py
+backend/rfsite/touch-reload.wsgi
+frontend/static_files/
+package-lock.json

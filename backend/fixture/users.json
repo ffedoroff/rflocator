@@ -1,0 +1,14 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$20000$wdXX7to1AmHD$+VFbSkU6WNauxr7s166WeBHIawv0FM6eDTt3CKmy/CA=",
+        "is_superuser": false,
+        "username": "Guest",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2016-01-01T08:28:27Z"
+    }
+}
+]

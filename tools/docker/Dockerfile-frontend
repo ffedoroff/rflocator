@@ -1,0 +1,6 @@
+FROM node:7.6.0
+USER node
+VOLUME ["/files/frontend"]
+ADD /files/frontend_entry_point.sh /files/frontend_entry_point.sh
+WORKDIR /files/frontend
+CMD ["bash", "/files/frontend_entry_point.sh"]

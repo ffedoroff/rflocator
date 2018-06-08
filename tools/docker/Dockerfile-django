@@ -1,0 +1,15 @@
+FROM python:3.5.3
+
+RUN useradd --user-group --create-home --shell /bin/false app
+
+ADD files/requirements.txt /files/requirements.txt
+RUN pip install -r /files/requirements.txt
+
+USER app
+
+EXPOSE 8000
+ADD /files/backend_entry_point.sh /files/backend_entry_point.sh
+
+VOLUME ["/files/backend", "/files/frontend", "/files/etc"]
+WORKDIR /files/backend
+CMD ["bash", "/files/backend_entry_point.sh"]

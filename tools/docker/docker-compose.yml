@@ -1,0 +1,28 @@
+version: '2'
+services:
+  rf_backend:
+    build:
+      context: .
+      dockerfile: Dockerfile-django
+    depends_on:
+      - postgres
+      - rf_frontend
+    env_file:
+      - files/env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../../backend:/files/backend
+      - ../../frontend:/files/frontend
+
+  rf_frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    volumes:
+      - ../../frontend:/files/frontend
+
+  postgres:
+    image: postgres:9.5.6
+    env_file:
+      - files/env

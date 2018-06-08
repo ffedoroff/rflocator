@@ -1,0 +1,14 @@
+Django
+fabric3
+django-filter
+django-rest-swagger
+django-tz-detect
+djangorestframework
+ecdsa
+paramiko
+psycopg2
+pycrypto
+pytz
+raven
+six
+uWSGI

@@ -1,0 +1,5 @@
+POSTGRES_DB=rflocator
+POSTGRES_USER=rflocator_user
+POSTGRES_PASSWORD=shk400hklhp4fgfghl4FhswFUM
+POSTGRES_PORT=5432
+POSTGRES_HOST=postgres
